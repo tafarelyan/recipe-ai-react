@@ -1,15 +1,40 @@
-@import "tailwindcss";
+/* app.css - CSS Base Compatível com Material UI */
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
+/* Estilos globais para o body e html */
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  font-family: 'Inter', sans-serif; /* Define a fonte padrão para a Inter ou sans-serif fallback */
+  margin: 0; /* Remove margens padrão do body */
+  padding: 0; /* Remove paddings padrão do body */
+  background-color: #f0f2f5; /* Um tom de fundo cinza claro, comum em interfaces web */
+  color: #333; /* Cor de texto padrão escura, legível em fundo claro */
+  -webkit-font-smoothing: antialiased; /* Melhora a renderização de fontes no Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale; /* Melhora a renderização de fontes no Firefox no macOS */
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+/* Ajustes para containers e elementos gerais (opcional, ajuste conforme necessário) */
+body {
+  display: flex; /* Para layout flexbox no body, se precisar centralizar conteúdo ou algo assim */
+  flex-direction: column; /* Layout de coluna padrão */
+  min-height: 100vh; /* Garante que o body ocupa pelo menos a altura total da viewport */
+}
+
+#root {
+  flex: 1; /* Permite que o #root (onde seu app React é renderizado) cresça para ocupar o espaço disponível */
+  display: flex; /* Flexbox dentro do #root para layout de conteúdo, se necessário */
+  flex-direction: column;
+}
+
+/* Você pode adicionar estilos globais adicionais aqui, se precisar,
+   mas tente manter simples e deixe a estilização mais específica para os
+   componentes Material UI ou usando o sistema de Temas do Material UI. */
+
+/* Exemplo de estilo global muito básico para links (opcional e pode ser ajustado) */
+a {
+  color: #1976d2; /* Cor primária padrão do Material UI para links */
+  text-decoration: none; /* Remove sublinhado padrão de links */
+}
+
+a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
