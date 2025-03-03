@@ -89,8 +89,8 @@ export default function Home() {
         "porcoes": "quantas porcoes servem"
       },
     ]`;
-    console.log(prompt);
-    alert(prompt);
+    navigator.clipboard.writeText(prompt);
+    alert('Prompt copiado para a clipboard!');
   }
 
   return (
@@ -105,19 +105,29 @@ export default function Home() {
           renderInput={(params) => <TextField {...params} label="Ingredientes Disponíveis (Digite e pressione Enter para adicionar)" />}
           onChange={(event, value) => setIngredientesSelecionados(value)}
           filterSelectedOptions
-          sx={{ marginTop: 2 }}
+          sx={{ marginY: 3 }}
         />
-        <Slider
-          value={porcoes}
-          onChange={(event: Event, value: number | number[]) => setPorcoes(value as number)}
-          valueLabelDisplay="on"
-          aria-labelledby="porcoes-slider"
-          marks={[...Array(8)].map((_, i) => ({
-            value: 2*i+1,
-            label: `${2*i+1}`,
-          }))}
-          min={1}
-          max={15}
+        <Box mb={3}>
+          <Typography gutterBottom>Número de porções</Typography>
+          <Slider
+            value={porcoes}
+            onChange={(event: Event, value: number | number[]) => setPorcoes(value as number)}
+            valueLabelDisplay="on"
+            aria-labelledby="porcoes-slider"
+            marks={[...Array(8)].map((_, i) => ({
+              value: 2*i+1,
+              label: `${2*i+1}`,
+            }))}
+            min={1}
+            max={15}
+          />
+        </Box>
+        <TextField
+          fullWidth
+          id="observations"
+          label="Alguma observação adicional sobre a receita?"
+          minRows={4}
+          multiline
         />
         <Button
           fullWidth
