@@ -5,16 +5,34 @@ import {
   Box,
   Button,
   Container,
+  Grid2,
+  List,
+  ListItem,
   Slider,
   TextField,
   Typography
 } from "@mui/material";
+import mockReceitasJson from '../../mockReceitas.json';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Recipes AI" },
+    { name: "description", content: "Gerador de Receitas por IA" },
   ];
+}
+
+interface Ingrediente {
+  nome: string;
+  quantidade: number;
+  unidade: string;
+}
+
+interface Receita {
+  nome: string;
+  ingredientes: Ingrediente[];
+  modo_de_preparo: string[];
+  tempo_de_preparo: number;
+  porcoes: number;
 }
 
 export default function Home() {
@@ -66,7 +84,8 @@ export default function Home() {
 
   const [ingredientesSelecionados, setIngredientesSelecionados] = useState<string[]>([]);
   const [porcoes, setPorcoes] = useState<number>(8);
-  const [recipeIndex, setRecipeIndex] = useState<number>(0);
+  const [receitas, setReceitas] = useState<Receita[]>([]);
+  const [receitaIndex, setReceitaIndex] = useState<number>(0);
 
   const handleSubmit = () => {
     const prompt = `Você é um cozinheiro profissional bem criativo que pode fazer receita com qualquer
@@ -76,69 +95,129 @@ export default function Home() {
     5 receitas nessa lista JSON:
     [
       {
-        "nome": "nome da receita",
+        "nome": "nome da receita, tipo string",
         "ingredientes": [
           {
-            "nome": "nome do ingrediente",
-            "quantidade": "quantidade",
-            "unidade": "unidade de medida",
+            "nome": "nome do ingredientem tipo string",
+            "quantidade": "quantidade, tipo number",
+            "unidade": "unidade de medida, tipo string",
           },
         ],
         "modo_de_preparo": ["lista ordenada sobre o passo a passo, em formato de lista"],
-        "tempo_de_preparo": "tempo total em minutos",
-        "porcoes": "quantas porcoes servem"
+        "tempo_de_preparo": "tempo total em minutos, tipo number",
+        "porcoes": "quantas porcoes servem, tipo number"
       },
     ]`;
-    navigator.clipboard.writeText(prompt);
-    alert('Prompt copiado para a clipboard!');
+
+    // navigator.clipboard.writeText(prompt);
+    // alert('Prompt copiado para a clipboard!');
+    setReceitas(mockReceitasJson);
   }
 
   return (
     <Container>
-      <Box sx={{ my: 8 }}>
-        <Typography variant="h3" component="h2">Formulário</Typography>
-        <Autocomplete
-          multiple
-          freeSolo
-          options={opcoesIngredientes}
-          getOptionLabel={(option) => option}
-          renderInput={(params) => <TextField {...params} label="Ingredientes Disponíveis (Digite e pressione Enter para adicionar)" />}
-          onChange={(event, value) => setIngredientesSelecionados(value)}
-          filterSelectedOptions
-          sx={{ marginY: 3 }}
-        />
-        <Box mb={3}>
-          <Typography gutterBottom>Número de porções</Typography>
-          <Slider
-            value={porcoes}
-            onChange={(event: Event, value: number | number[]) => setPorcoes(value as number)}
-            valueLabelDisplay="on"
-            aria-labelledby="porcoes-slider"
-            marks={[...Array(8)].map((_, i) => ({
-              value: 2*i+1,
-              label: `${2*i+1}`,
-            }))}
-            min={1}
-            max={15}
+      <Grid2 container sx={{ marginY: 8, minHeight: '80vh', border: '1px solid #777' }}>
+        <Grid2 size={6} sx={{ padding: 2 }}>
+          <Typography variant="h4" component="h2">Gerador de Receitas por IA</Typography>
+          <Autocomplete
+            multiple
+            freeSolo
+            options={opcoesIngredientes}
+            getOptionLabel={(option) => option}
+            renderInput={(params) => <TextField {...params} label="Ingredientes Disponíveis (Digite e pressione Enter para adicionar)" />}
+            onChange={(event, value) => setIngredientesSelecionados(value)}
+            filterSelectedOptions
+            value={['Tomate', 'Brócolis', 'Tofu', 'Ovo', 'Carne Bovina (Patinho)']}
+            sx={{ marginY: 3 }}
           />
-        </Box>
-        <TextField
-          fullWidth
-          id="observations"
-          label="Alguma observação adicional sobre a receita?"
-          minRows={4}
-          multiline
-        />
-        <Button
-          fullWidth
-          variant="contained"
-          color="primary"
-          onClick={handleSubmit}
-          sx={{ marginTop: 3 }}
-        >
-          Buscar receitas
-        </Button>
-      </Box>
+          <Box mb={3}>
+            <Typography gutterBottom>Número de porções</Typography>
+            <Slider
+              value={porcoes}
+              onChange={(event: Event, value: number | number[]) => setPorcoes(value as number)}
+              valueLabelDisplay="on"
+              aria-labelledby="porcoes-slider"
+              marks={[...Array(8)].map((_, i) => ({
+                value: 2*i+1,
+                label: `${2*i+1}`,
+              }))}
+              min={1}
+              max={15}
+            />
+          </Box>
+          <TextField
+            fullWidth
+            id="observations"
+            label="Alguma observação adicional sobre a receita?"
+            minRows={4}
+            multiline
+          />
+          <Button
+            fullWidth
+            variant="contained"
+            color="primary"
+            onClick={handleSubmit}
+            sx={{ marginTop: 3 }}
+          >
+            Gerar receitas
+          </Button>
+        </Grid2>
+        <Grid2 size={6} sx={{ display: 'flex', flexDirection: 'column' }}>
+          {receitas.length > 0 && (
+            <>
+            {receitas.map((receita, index) => (
+                <Box
+                  key={index}
+                  sx={{
+                    padding: 1,
+                    border: '1px solid black',
+                    cursor: 'pointer',
+                    height: index === receitaIndex ? '100%' : 'auto',
+                    overflow: 'hidden',
+                  }}
+                  onClick={() => setReceitaIndex(index)}
+                >
+                  {index == receitaIndex ? (
+                    <>
+                      <Typography variant="h5" gutterBottom>{receita.nome}</Typography>
+                      <hr />
+
+                      <Typography variant="subtitle1">Ingredientes:</Typography>
+                      <List dense>
+                        {receita.ingredientes.map((ingrediente, idx) => (
+                          <ListItem key={idx}>
+                            <Typography>{ingrediente.nome} - {ingrediente.quantidade} {ingrediente.unidade}</Typography>
+                          </ListItem>
+                        ))}
+                      </List>
+
+                      <Typography variant="subtitle1" gutterBottom>
+                        Modo de Preparo:
+                      </Typography>
+                      <List dense>
+                        {receita.modo_de_preparo.map((passo, idx) => (
+                          <ListItem key={idx}>
+                            <Typography>{idx + 1}. {passo}</Typography>
+                          </ListItem>
+                        ))}
+                      </List>
+
+                      <Typography variant="body2">
+                        Tempo de Preparo: {receita.tempo_de_preparo} minutos
+                      </Typography>
+                      <Typography variant="body2">
+                        Porções: {receita.porcoes}
+                      </Typography>
+                    </>
+                  ) : (
+                    <Typography variant="h6">{receita.nome}</Typography>
+                  )}
+                </Box>
+            ))}
+            </>
+          )}
+        </Grid2>
+      </Grid2>
     </Container>
   );
 }

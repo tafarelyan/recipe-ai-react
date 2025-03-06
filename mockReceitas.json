@@ -1,0 +1,385 @@
+[
+  {
+    "nome": "Alcatra Acebolada com Abobrinha Grelhada, Arroz Branco Fresco e Salada de Rúcula e Tomate",
+    "ingredientes": [
+      {
+        "nome": "Alcatra em bifes médios",
+        "quantidade": "1.4",
+        "unidade": "kg"
+      },
+      {
+        "nome": "Abobrinhas médias",
+        "quantidade": "5",
+        "unidade": "unidades"
+      },
+      {
+        "nome": "Cebolas grandes",
+        "quantidade": "3",
+        "unidade": "unidades"
+      },
+      {
+        "nome": "Tomates maduros",
+        "quantidade": "4",
+        "unidade": "unidades médias"
+      },
+      {
+        "nome": "Rúcula fresca",
+        "quantidade": "250",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Arroz branco",
+        "quantidade": "2.5",
+        "unidade": "xícaras"
+      },
+      {
+        "nome": "Azeite extra virgem",
+        "quantidade": "10",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Vinagre balsâmico",
+        "quantidade": "3",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Sal grosso",
+        "quantidade": "a gosto",
+        "unidade": ""
+      },
+      {
+        "nome": "Pimenta do reino preta moída",
+        "quantidade": "a gosto",
+        "unidade": ""
+      },
+      {
+        "nome": "Orégano seco",
+        "quantidade": "2",
+        "unidade": "colheres de chá"
+      }
+    ],
+    "modo_de_preparo": [
+      "Cozinhe o arroz branco conforme as instruções da embalagem para 7 porções. Reserve aquecido.",
+      "Corte as abobrinhas em rodelas médias e as cebolas em rodelas mais grossas. Tempere com sal, pimenta do reino e 2 colheres de sopa de azeite. Grelhe em fogo médio até ficarem macias e levemente douradas. Reserve.",
+      "Tempere os bifes de alcatra com sal, pimenta do reino e orégano seco. Aqueça uma frigideira grande ou chapa em fogo alto com 3 colheres de sopa de azeite. Sele os bifes rapidamente dos dois lados para manterem-se suculentos por dentro (ou cozinhe ao ponto desejado). Retire e reserve aquecidos.",
+      "Na mesma frigideira, adicione as cebolas em rodelas (se desejar, use mais cebolas além das grelhadas) e refogue até caramelizarem levemente.",
+      "Prepare a salada: lave e seque a rúcula e os tomates. Corte os tomates em cubos ou rodelas. Em uma tigela, misture a rúcula e o tomate. Tempere com 3 colheres de sopa de azeite, vinagre balsâmico, sal e pimenta do reino a gosto. Misture delicadamente.",
+      "Para servir, distribua o arroz branco em 7 pratos. Coloque por cima a abobrinha e a cebola grelhadas. Adicione os bifes de alcatra acebolados com a cebola caramelizada. Acompanhe com a salada de rúcula e tomate."
+    ],
+    "tempo_de_preparo": "45",
+    "porcoes": "7"
+  },
+  {
+    "nome": "Risoto Cremoso de Abobrinha com Alcatra Grelhada e Toque de Rúcula e Tomate",
+    "ingredientes": [
+      {
+        "nome": "Alcatra em bifes",
+        "quantidade": "1.05",
+        "unidade": "kg"
+      },
+      {
+        "nome": "Arroz arbóreo",
+        "quantidade": "2",
+        "unidade": "xícaras"
+      },
+      {
+        "nome": "Abobrinhas médias",
+        "quantidade": "4",
+        "unidade": "unidades"
+      },
+      {
+        "nome": "Tomates cereja",
+        "quantidade": "250",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Rúcula baby",
+        "quantidade": "150",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Cebola picada",
+        "quantidade": "1",
+        "unidade": "unidade média"
+      },
+      {
+        "nome": "Vinho branco seco",
+        "quantidade": "1",
+        "unidade": "xícara"
+      },
+      {
+        "nome": "Caldo de legumes quente",
+        "quantidade": "2",
+        "unidade": "litros"
+      },
+      {
+        "nome": "Queijo parmesão ralado",
+        "quantidade": "100",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Manteiga sem sal",
+        "quantidade": "2",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Azeite extra virgem",
+        "quantidade": "5",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Sal",
+        "quantidade": "a gosto",
+        "unidade": ""
+      },
+      {
+        "nome": "Pimenta do reino branca moída",
+        "quantidade": "a gosto",
+        "unidade": ""
+      }
+    ],
+    "modo_de_preparo": [
+      "Tempere os bifes de alcatra com sal e pimenta do reino branca. Grelhe ou asse até o ponto desejado. Corte em tiras e reserve aquecido.",
+      "Corte as abobrinhas em cubos pequenos. Lave os tomates cereja e corte ao meio. Lave e seque a rúcula baby.",
+      "Em uma panela grande, aqueça 2 colheres de sopa de azeite e refogue a cebola picada até ficar transparente. Adicione o arroz arbóreo e refogue por 2 minutos, mexendo sempre.",
+      "Adicione o vinho branco e deixe evaporar, mexendo sempre. Comece a adicionar o caldo de legumes quente concha por concha, esperando o arroz absorver o líquido entre as adições e mexendo sempre para liberar o amido e criar cremosidade. Continue até o arroz estar 'al dente' e cremoso (cerca de 20 minutos).",
+      "Nos últimos 5 minutos de cozimento do risoto, adicione os cubos de abobrinha. Ajuste o sal e a pimenta do reino branca.",
+      "Desligue o fogo e adicione a manteiga e metade do queijo parmesão ralado. Misture vigorosamente para incorporar e dar brilho ao risoto.",
+      "Sirva o risoto cremoso imediatamente em 7 pratos. Distribua por cima as tiras de alcatra grelhada, tomates cereja cortados ao meio e folhas de rúcula baby. Finalize com o restante do queijo parmesão ralado e um fio de azeite extra virgem."
+    ],
+    "tempo_de_preparo": "60",
+    "porcoes": "7"
+  },
+  {
+    "nome": "Salada Morna de Alcatra e Abobrinha com Arroz Selvagem, Tomate Seco e Rúcula",
+    "ingredientes": [
+      {
+        "nome": "Alcatra em cubos",
+        "quantidade": "875",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Arroz selvagem",
+        "quantidade": "1.5",
+        "unidade": "xícaras"
+      },
+      {
+        "nome": "Abobrinhas italianas",
+        "quantidade": "3",
+        "unidade": "unidades médias"
+      },
+      {
+        "nome": "Tomates secos hidratados em azeite",
+        "quantidade": "150",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Rúcula",
+        "quantidade": "200",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Cebola roxa",
+        "quantidade": "1",
+        "unidade": "unidade pequena"
+      },
+      {
+        "nome": "Azeite extra virgem",
+        "quantidade": "7",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Vinagre de vinho tinto",
+        "quantidade": "3",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Mostarda Dijon",
+        "quantidade": "1",
+        "unidade": "colher de sopa"
+      },
+      {
+        "nome": "Mel",
+        "quantidade": "1",
+        "unidade": "colher de sopa"
+      },
+      {
+        "nome": "Sal",
+        "quantidade": "a gosto",
+        "unidade": ""
+      },
+      {
+        "nome": "Pimenta do reino",
+        "quantidade": "a gosto",
+        "unidade": ""
+      }
+    ],
+    "modo_de_preparo": [
+      "Cozinhe o arroz selvagem conforme as instruções da embalagem para 7 porções. Escorra e reserve.",
+      "Corte a alcatra em cubos médios e tempere com sal e pimenta do reino. Aqueça 2 colheres de sopa de azeite em uma frigideira grande e sele a carne até dourar por todos os lados e cozinhar ao ponto desejado. Retire e reserve aquecida.",
+      "Corte as abobrinhas em rodelas ou cubos médios. Na mesma frigideira (adicionando mais azeite se necessário), refogue a abobrinha até ficar macia e levemente dourada. Reserve.",
+      "Corte a cebola roxa em fatias finas. Corte os tomates secos em pedaços menores, se forem grandes.",
+      "Prepare o molho: em uma tigela pequena, misture o vinagre de vinho tinto, a mostarda Dijon, o mel, 3 colheres de sopa de azeite, sal e pimenta do reino a gosto. Bata com um garfo para emulsionar.",
+      "Em uma tigela grande ou travessa, misture o arroz selvagem cozido, a rúcula fresca, os cubos de alcatra, a abobrinha refogada, a cebola roxa fatiada e os tomates secos picados. Regue com o molho e misture delicadamente para envolver todos os ingredientes.",
+      "Sirva a salada morna ou fria, dividindo em 7 porções. Ajuste os temperos se necessário."
+    ],
+    "tempo_de_preparo": "50",
+    "porcoes": "7"
+  },
+  {
+    "nome": "Tacos Recheados com Alcatra Desfiada, Abobrinha Refogada, Pico de Tomate e Rúcula Cremosa",
+    "ingredientes": [
+      {
+        "nome": "Alcatra cozida e desfiada",
+        "quantidade": "840",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Tortillas de trigo ou milho médias",
+        "quantidade": "14",
+        "unidade": "unidades"
+      },
+      {
+        "nome": "Abobrinhas pequenas",
+        "quantidade": "3",
+        "unidade": "unidades"
+      },
+      {
+        "nome": "Tomates maduros",
+        "quantidade": "3",
+        "unidade": "unidades médias"
+      },
+      {
+        "nome": "Rúcula picada",
+        "quantidade": "100",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Cebola roxa picada",
+        "quantidade": "1/2",
+        "unidade": "unidade pequena"
+      },
+      {
+        "nome": "Limão",
+        "quantidade": "1",
+        "unidade": "unidade"
+      },
+      {
+        "nome": "Azeite extra virgem",
+        "quantidade": "4",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Creme de leite fresco ou iogurte natural",
+        "quantidade": "1/2",
+        "unidade": "xícara"
+      },
+      {
+        "nome": "Arroz branco cozido",
+        "quantidade": "1",
+        "unidade": "xícara (opcional, para acompanhar)"
+      },
+      {
+        "nome": "Sal",
+        "quantidade": "a gosto",
+        "unidade": ""
+      },
+      {
+        "nome": "Pimenta do reino",
+        "quantidade": "a gosto",
+        "unidade": ""
+      }
+    ],
+    "modo_de_preparo": [
+      "Aqueça o alcatra desfiada. Reserve aquecida.",
+      "Corte as abobrinhas em cubos pequenos. Refogue em 2 colheres de sopa de azeite até ficarem macias e levemente douradas. Tempere com sal e pimenta. Reserve aquecidas.",
+      "Prepare o pico de tomate: pique os tomates em cubos pequenos e a cebola roxa finamente. Misture em uma tigela, adicione o suco de meio limão, sal e pimenta a gosto. Reserve.",
+      "Prepare o creme de rúcula: pique finamente a rúcula e misture com o creme de leite fresco ou iogurte natural. Tempere com sal, pimenta e suco da outra metade do limão a gosto. Ajuste a consistência se necessário, adicionando um pouco de água ou mais creme. Reserve.",
+      "Aqueça as tortillas em uma frigideira seca ou diretamente na chama do fogão até ficarem macias e levemente tostadas.",
+      "Para montar os tacos, distribua uma porção de alcatra desfiada em cada tortilla. Adicione por cima a abobrinha refogada, o pico de tomate e finalize com o creme de rúcula. Dobre ao meio e sirva imediatamente.",
+      "Opcionalmente, acompanhe os tacos com arroz branco cozido."
+    ],
+    "tempo_de_preparo": "40",
+    "porcoes": "7"
+  },
+  {
+    "nome": "Bowl Mediterrâneo de Alcatra e Abobrinha com Arroz, Rúcula e Tomate Confit",
+    "ingredientes": [
+      {
+        "nome": "Alcatra em cubos médios",
+        "quantidade": "875",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Arroz branco cozido",
+        "quantidade": "2.5",
+        "unidade": "xícaras"
+      },
+      {
+        "nome": "Abobrinhas médias",
+        "quantidade": "3",
+        "unidade": "unidades"
+      },
+      {
+        "nome": "Tomates cereja",
+        "quantidade": "350",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Rúcula baby",
+        "quantidade": "200",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Azeitonas pretas sem caroço",
+        "quantidade": "100",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Queijo feta esfarelado",
+        "quantidade": "100",
+        "unidade": "gramas"
+      },
+      {
+        "nome": "Azeite extra virgem",
+        "quantidade": "6",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Alho",
+        "quantidade": "3",
+        "unidade": "dentes"
+      },
+      {
+        "nome": "Ervas finas picadas (salsinha, manjericão, orégano)",
+        "quantidade": "2",
+        "unidade": "colheres de sopa"
+      },
+      {
+        "nome": "Açúcar",
+        "quantidade": "1",
+        "unidade": "colher de chá"
+      },
+      {
+        "nome": "Sal",
+        "quantidade": "a gosto",
+        "unidade": ""
+      },
+      {
+        "nome": "Pimenta do reino",
+        "quantidade": "a gosto",
+        "unidade": ""
+      }
+    ],
+    "modo_de_preparo": [
+      "Cozinhe o arroz branco e reserve.",
+      "Prepare o tomate confit: Preaqueça o forno a 160°C. Corte os tomates cereja ao meio e coloque em uma assadeira. Regue com 3 colheres de sopa de azeite, adicione os dentes de alho amassados, açúcar, sal, pimenta e ervas finas picadas. Asse por 30-40 minutos, ou até os tomates ficarem macios e levemente caramelizados. Reserve.",
+      "Corte as abobrinhas em rodelas ou cubos. Aqueça 2 colheres de sopa de azeite em uma frigideira grande e refogue a abobrinha até ficar macia e dourada. Tempere com sal e pimenta. Reserve.",
+      "Tempere os cubos de alcatra com sal e pimenta. Aqueça 1 colher de sopa de azeite na mesma frigideira (se necessário) e sele a carne até dourar por todos os lados e cozinhar ao ponto desejado. Reserve aquecida.",
+      "Para montar os bowls, distribua o arroz branco cozido em 7 bowls. Adicione por cima a rúcula baby fresca, a abobrinha refogada, os tomates confit (incluindo o alho assado), azeitonas pretas e cubos de alcatra grelhada. Finalize com queijo feta esfarelado e um fio de azeite extra virgem.",
+      "Sirva os bowls mornos ou frios. Ajuste os temperos e a quantidade de ingredientes de acordo com sua preferência."
+    ],
+    "tempo_de_preparo": "55",
+    "porcoes": "7"
+  }
+]
